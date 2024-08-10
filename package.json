@@ -1,0 +1,30 @@
+{
+  "name": "mariaa",
+  "version": "1.0.0",
+  "description": "A simple assistant for my discord server (LSI - Vision RP)",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js"
+  },
+  "keywords": [],
+  "author": "Sofian",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElSofian/mariaa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ElSofian/mariaa/issues"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "chalk": "^4.1.2",
+    "dayjs": "^1.11.10",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "moment": "^2.30.1",
+    "openai": "^4.55.4"
+  }
+}
