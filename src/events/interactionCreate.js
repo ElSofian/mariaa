@@ -129,18 +129,14 @@ module.exports = {
 						const member = await interaction.guild.members.fetch(memberId);
 						if (!member) return interaction.reply(errorEmbed("Membre introuvable."));
 
-						if (memberId == interaction.member.id) {
+						if (memberId == interaction.member.id)
 							return interaction.reply({ embeds: [errorEmbed("Vous ne pouvez pas vous ajouter vous-même au ticket.", true)], ephemeral: true });
-						}
-						if (memberId == client.user.id) {
+						if (memberId == client.user.id)
 							return interaction.reply({ embeds: [errorEmbed("Je suis déjà dans le ticket.", true)], ephemeral: true });
-						}
-						if (memberId == "683269450086219777") {
+						if (memberId == "683269450086219777")
 							return interaction.reply({ embeds: [errorEmbed("Mr Bendarsa est déjà présent dans le ticket.", true)], ephemeral: true });
-						}
-						if (interaction.channel.permissionsFor(member).has(PermissionFlagsBits.ViewChannel)) {
+						if (interaction.channel.permissionsFor(member).has(PermissionFlagsBits.ViewChannel))
 							return interaction.reply({ embeds: [errorEmbed("Ce membre est déjà dans le ticket.", true)], ephemeral: true });
-						}
 
 						const embed = new EmbedBuilder()
 						.setColor("CF1010")

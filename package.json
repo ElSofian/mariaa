@@ -24,6 +24,8 @@
     "discord.js": "^14.14.1",
     "dotenv": "^16.4.5",
     "fs": "^0.0.1-security",
+    "leboncoin-api-search": "^0.0.7",
+    "leboncoin-api-wrapper": "^1.1.4",
     "moment": "^2.30.1",
     "openai": "^4.55.4"
   }

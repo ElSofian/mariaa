@@ -1,5 +1,4 @@
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, Events, ActivityType } = require('discord.js');
-const moment = require('moment');
 
 module.exports = {
 	name: Events.ClientReady,
